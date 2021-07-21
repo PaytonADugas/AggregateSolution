@@ -1,0 +1,123 @@
+@charset "UTF-8";
+body {
+    background-color: #FFFEFF;
+	margin: 0 auto;}
+header {
+	margin: 0;
+	width: 100%;}
+h1, h2 {
+	color: #437361;
+	font-family: "Verdana", serif;
+	font-weight: 400;
+	margin: 10px 0;
+	padding: 0;
+	text-align: center;
+	width: 100%;}
+nav {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: 100%;}
+header nav {
+	padding: 20px 0 0 0;}
+nav .navdash {
+    margin: 0;}
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;}
+nav li {
+	display: inline-block;
+	margin: 0 10px;
+	padding: 0;}
+nav li a {
+    padding: 2px;}
+a {
+	color: #9BA672;
+	font-family: "Verdana", serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 30px;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+    width: auto;}
+a:hover {
+	color: #F2D6B3;
+	}
+button {
+	border: none;
+    cursor: pointer;
+    font-family: 'Verdana', serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 30px;
+	text-decoration: none;}
+footer {
+    margin: 0;
+    padding: 10px 0;}
+footer p {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    }
+form {
+	color: #FFF;
+	margin: 10px 0;
+	padding: 0;
+	text-align: left;
+	text-decoration: none;
+	width: 100%;}
+input {
+	border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    font-family: 'Verdana', serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 30px;
+	text-decoration: none;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;}
+img {
+	margin: 0;
+	max-width: 100%;
+	padding: 0;
+	vertical-align: middle;}
+p {
+	color: #012615;
+	font-family: "Verdana", serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 30px;
+	margin: 8px 0;
+	padding: 0 8%;
+    text-decoration: none;
+	width: 84%;}
+p::selection {
+  background: #FFF;
+}
+p span span {
+	font-style: normal;}
+span {
+	font-style: italic;}
+u {
+	color: #014023;
+	font-size: 15px;
+	line-height: 48px;
+	padding: 5px;
+	text-decoration: none;
+	width: 100%;}
+.centeredp {
+	text-align: center;}
+.funky:hover {
+    color: #000;
+}
+.headerimage {
+     width: 100%;
+     }
+.selectedlink {
+    color: #F2D6B3;
+	}

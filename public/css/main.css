@@ -1,0 +1,270 @@
+@charset "UTF-8";
+body {
+    max-width: 900px;
+    padding: 0;
+}
+
+h1 {
+    font-size: 20px;
+    line-height: 50px;
+}
+
+h2 {
+    font-size: 16px;
+    line-height: 40px;
+}
+
+section {
+    float: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+header {
+    padding: 25px 0;
+}
+
+button {
+    background-color: #180D0E;
+    color: #F1E1E3;
+    margin: 10px 0;
+    padding: 10px 0;
+    width: 100%;
+}
+
+input {
+    background-color: #180D0E;
+    color: #F1E1E3;
+    margin: 10px 0;
+    padding: 10px 0;
+    width: 100%;
+}
+
+#archivesection {
+    padding: 40px 0;
+}
+
+#archivesection p {
+    margin: 0;
+}
+
+#archivesection .writingnav {
+    padding: 10px 0;
+}
+
+#mainimage {
+    display: block;
+}
+
+#moviesection {
+    background-color: #CCFFFF
+}
+
+#moviesection a {
+    color: #F00;
+    text-decoration: underline;
+}
+
+#moviesection u,
+#moviesection p {
+    color: #000;
+}
+
+#moviesection2 {
+    background-color: #990000;
+}
+
+#moviesection2 a {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+#moviesection2 u,
+#moviesection2 p {
+    color: #000;
+}
+
+#moviesection3 {
+    background-color: #B5CDF4;
+}
+
+#moviesection3 a {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+#moviesection3 u,
+#moviesection3 p {
+    color: #000;
+}
+
+#moviesection4 {
+    background-color: #FFFF00;
+}
+
+#moviesection4 a {
+    color: #00CCFF;
+    text-decoration: underline;
+}
+
+#moviesection4 u,
+#moviesection2 p {
+    color: #000;
+}
+
+#nathansection {
+    background-color: #FFFFCC;
+    margin: 0;
+    padding: 25px 0;
+}
+
+#nathansection p,
+#nathansection u {
+    color: #33CC99
+}
+
+#previousnextbuttons {
+    margin: 8px 0;
+    padding: 0 0 0 10px;
+    text-align: center;
+    width: auto;
+}
+
+#previousnextbuttons button {
+    padding: 0 10px;
+    width: auto;
+}
+
+#subadv {
+    background-color: #F1E1E3;
+}
+
+#subadv body {
+    background-color: #F1E1E3;
+}
+
+#subinput {
+    margin: 0;
+    padding: 10px 5%;
+    background-color: rgb(81, 204, 147);
+    caret-color: #FF0;
+    width: 90%;
+}
+
+#submarinesection {
+    background-color: #180D0E;
+    margin: 0;
+    padding: 25px 0;
+}
+
+#submarinesection p {
+    color: #F1E1E3;
+    margin: 0;
+}
+
+#subtitle {
+    font-size: 20px;
+}
+
+.imghover {
+    background-color: rgb(81, 204, 147);
+    margin: 0;
+    padding: 30px 0;
+}
+
+.mc-field-group label {
+    color: #180D0E;
+    font-family: "Verdana", serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 8px 0;
+    padding: 0;
+    text-decoration: none;
+    width: 100%;
+}
+
+.response {
+    font-family: "Verdana", serif;
+    font-size: 15px;
+    color: #180D0E;
+}
+
+.slideimage {
+    display: none;
+}
+
+.subscriptionpannel input {
+    color: #FF0;
+}
+
+.tallimage {
+    padding: 20px 17%;
+    width: 66%;
+}
+
+.writingnav {
+    padding: 25px 0;
+}
+
+.writingnav li {
+    margin: 0 5px;
+}
+
+nav .navdash {
+    margin: 0;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (orientation: landscape) {
+    body {
+        padding: 0 10%;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    h1 {
+        font-size: 30px;
+        line-height: 80px;
+    }
+    a {
+        font-size: 15px;
+    }
+    button {
+        font-size: 15px;
+    }
+    input {
+        font-size: 15px;
+    }
+    p,
+    .mc-field-group label {
+        font-size: 15px;
+    }
+    u {
+        font-size: 16px;
+    }
+    .imghover {
+        padding: 40px 0;
+    }
+    .imghover:hover {
+        background-color: #B2DDCA;
+        padding: 40px 0;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    h1 {
+        font-size: 35px;
+    }
+    p,
+    .mc-field-group label {
+        padding: 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    h1 {
+        font-size: 40px;
+    }
+}

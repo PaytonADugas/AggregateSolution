@@ -1,0 +1,35 @@
+{
+  "name": "web-weather",
+  "version": "1.0.0",
+  "description": "For josiahswanson.com",
+  "author": "Josiah Swanson",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "assert-plus": "^1.0.0",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "bunyan": "^1.8.15",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.5",
+    "cron": "^1.8.2",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-method-override": "0.0.3",
+    "express-session": "^1.17.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.11.13",
+    "morgan": "^1.10.0",
+    "mssql": "^6.3.1",
+    "mysql": "^2.18.1",
+    "node-fetch": "^2.6.1",
+    "passport": "^0.4.1",
+    "passport-azure-ad": "^4.3.0",
+    "request": "^2.88.2",
+    "requirejs": "^2.3.6"
+  }
+}

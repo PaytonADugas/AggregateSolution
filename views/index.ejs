@@ -1,0 +1,11 @@
+<!doctype html>
+<html>
+
+<% if (!user) { %>
+  <h2 class='centeredp'><u>Welcome! Please log in.</u></p>
+<% } else { %>
+  <h2 class='centeredp'><u>Hello, <%= user.displayName %>!</u></h2>
+  <p class="centeredp"><a href="/logout">Log Out</a></p>
+<% } %>
+
+</html>

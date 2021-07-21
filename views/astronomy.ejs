@@ -1,0 +1,8 @@
+<% if (!user) { %>
+	<h2>Welcome! Please log in.</h2>
+	<a href="/login">Log In</a>
+<% } else { %>
+<p>Here is your astronomy report:</p>
+<p class='centeredp'><u><%- astroReport %></u></p>
+<p class="centeredp"><a href="/logout">Log Out</a></p>
+<% } %>

@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.deploySubpath": ".",
+    "appService.defaultWebAppToDeploy": "/subscriptions/03c43e6a-9e63-43c0-8fb2-446c41d09a76/resourceGroups/RTS_resource_group/providers/Microsoft.Web/sites/rapidtek-project-one-dev"
+}

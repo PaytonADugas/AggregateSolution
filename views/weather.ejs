@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<!-- “An orange sun might have been descending over ruthless waters, but John and Lewis couldn’t have known, for they were involved in an obsession.  Each had his own reason: one sought power, the other sought a lost companion.  But both men were hopeless.”-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="Who is Josiah Swanson?">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://josiahswanson.com/css/foundation.css">
+    <link rel="stylesheet" href="https://josiahswanson.com/css/base.css">
+    <link rel="stylesheet" href="https://josiahswanson.com/css/main.css">
+    <script src="https://josiahswanson.com/js/hej.js"></script>
+    <title>Josiah Swanson - weatherReport</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>	
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class='container'>
+		<form method="post">
+			<div class="input-group mb-3">
+				<input type="text" name='city' class="form-control" placeholder="Enter a city"  aria-describedby="button-addon2">
+				<div class="input-group-append">
+					<button type='submit' class="btn btn-outline-secondary" type="button" id="button-addon2">Get weather</button>
+				</div>
+			</div>
+		</form>
+		<% if (weatherReport !== null) { %>
+		<div class="grid-container">
+		  <div class="item center item1"><img id='icon' width='100' height='100' src="/img/partually_sunny.png"></div>
+		  <div class="item center item2"><p id='temp'><%= Math.round(weatherReport.current.temp) %> °F</p></div>
+		  <div class="item item3">
+			<ul class='left_ul' style="list-style-type:none;">
+			  <li class='left'><p id='precip' style='font-size: 16px'>Precipitation: 🤷‍</p></li>
+			  <li class='left'><p id='hum' style='font-size: 16px'>Humidity: <%= weatherReport.current.humidity %>%</p></li>
+			  <li class='left'><p id='wind' style='font-size: 16px'>Wind: <%= weatherReport.current.wind_speed %> mph</p></li>
+			</ul>
+		  </div>
+		  <div class="item item4">
+			<ul>
+			  <li class='right'><p style='font-size: 20px'><b><%= location %></b></p></li>
+			  <li class='right'><p id='day' style='font-size: 16px'>Tuesday</p></li>
+			  <li class='right'><p id='visual' style='font-size: 16px'><%= weatherReport.current.weather[0].description %></p></li>
+			</ul>
+		  </div>
+		  <div class="item item5">
+			<table>
+			  <tr>
+				<td id='temp_s' class='data_select'><p style='font-size: 16px'>Temperature</p></td>
+				<td id='precip_s' class='data_select'><p style='font-size: 16px'>Precipitation</p></td>
+				<td id='wind_s' class='data_select'><p style='font-size: 16px'>Wind</p></td>
+			  </tr>
+			</table>
+		  </div>
+		  <div class='itme item6'>
+			<table id='table_num'></table>
+		  </div>
+		  <div class="item item7">
+			  <table id='table_graph'></table>
+		  </div>
+		  <div class="item item8">
+			<table id='table_times'></table>
+		</div>
+		  <div class="item item9">
+			<table>
+			  <tr>
+				<td value='0' class='day_select'>
+				  <ul>
+					<li><p id='day_0'>Tue</p></li>
+					<li><p ><%= Math.round(weatherReport.current.temp) %>° / <%= Math.round(weatherReport.current.temp) %>°</p></li>
+				  </ul>
+				</td>
+				<td value='1' class='day_select'>
+				  <ul>
+					<li><p id='day_1'>Wed</p></li>
+					<li><p><%= Math.round(weatherReport.daily[0].temp.max) %>° / <%= Math.round(weatherReport.daily[0].temp.min) %>°</p></li>
+				  </ul>
+				</td>
+				<td value='2' class='day_select'>
+				  <ul>
+					<li><p id='day_2'>Thu</p></li>
+					<li><p><%= Math.round(weatherReport.daily[1].temp.max) %>° / <%= Math.round(weatherReport.daily[1].temp.min) %>°</p></li>
+				  </ul>
+				</td>
+				<td value='3' class='day_select'>
+				  <ul>
+					<li><p id='day_3'>Thu</p></li>
+					<li><p><%= Math.round(weatherReport.daily[1].temp.max) %>° / <%= Math.round(weatherReport.daily[1].temp.min) %>°</p></li>
+				  </ul>
+				</td>
+				<td value='4' class='day_select'>
+				  <ul>
+					<li><p id='day_4'>Sat</p></li>
+					<li><p><%= Math.round(weatherReport.daily[3].temp.max) %>° / <%= Math.round(weatherReport.daily[3].temp.min) %>°</p></li>
+				  </ul>
+				</td>
+				<td value='5' class='day_select'>
+				  <ul>
+					<li><p id='day_5'>Sun</p></li>
+					<li><p><%= Math.round(weatherReport.daily[4].temp.max) %>° / <%= Math.round(weatherReport.daily[4].temp.min) %>°</p></li>
+				  </ul>
+				</td>
+				<td value='6' class='day_select'>
+				  <ul>
+					<li><p id='day_6'>Mon</p></li>
+					<li><p><%= Math.round(weatherReport.daily[5].temp.max) %>° / <%= Math.round(weatherReport.daily[5].temp.min) %>°</p></li>
+				  </ul>
+				</td>
+			  </tr>
+			</table>
+		  </div>
+		</div>
+		<img src="" alt="">
+		<% } %>
+	
+		<footer>
+			<p class="centeredp">&copy;Josiah 2020 All Rights Reserved</p>
+		</footer>
+	
+		</body>
+	
+</div>
+
+<script src='/js/weather.js'></script>
+
+</html>

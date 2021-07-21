@@ -1,0 +1,105 @@
+<style>
+
+  /* STYLE FOR WEATHER VISUALIZATION - START */
+
+  .item1 { grid-area: icon; }
+  .item2 { grid-area: current_temp; }
+  .item3 { grid-area: precip_hum_wind; }
+  .item4 { grid-area: loc_day_sky; }
+  .item5 { grid-area: selection; }
+  .item6 { grid-area: num; }
+  .item7 { grid-area: graph; }
+  .item8 { grid-area: time; }
+  .item9 { grid-area: future; }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'icon current_temp precip_hum_wind precip_hum_wind precip_hum_wind loc_day_sky'
+      'selection selection selection selection selection selection'
+      'num num num num num num'
+      'graph graph graph graph graph graph'
+      'time time time time time time'
+      'future future future future future future';
+    grid-gap: 10px;
+  }
+
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+  }
+
+  p{
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+  }
+
+  table{
+    width: 100%;
+  }
+
+  ul{
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  #icon{
+    font-size: 30px;
+  }
+
+  #temp{
+    font-size: 30px;
+  }
+
+  .right{
+    text-align: right;
+  }
+
+  .center{
+    margin: auto;
+  }
+
+  .left{
+    text-align: left;
+  }
+
+  .data_select{
+    width: 33%;
+    padding: 10px;
+  }
+
+  #temp_s{
+    border-bottom: solid 2px orange;
+  }
+
+  .city_input{
+    border-radius: 5px;
+    background: 'white';
+  }
+
+  .left_ul{
+    float: left;
+  }
+
+  .day_select{
+    border-radius: 20px;
+    background-color: #fafafa;
+  }
+
+  /* BUILDING GRAPH TABLE */
+
+  .table_graph{
+    /* border: solid black 1px; */
+    /* background: #dfdfdf; */
+    padding-top: 1px;
+  }
+
+  .gray{
+    color: #b5b5b5;
+  }
+
+  /* STYLE FOR WEATHER VISUALIZATION - END */
+
+</style>

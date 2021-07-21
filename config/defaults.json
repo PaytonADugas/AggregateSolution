@@ -1,0 +1,11 @@
+{
+    "slackAuth": "xoxb-899005380643-910082682484-wllyNiCxz4Oi4gbZ1MC2m57e",
+    "mainSlackChannel": "DSUMX9JMU",
+    "apiSurfKey": "fc234854e26c0b5d031f9ff0137bfba0",
+    "apiWeatherKey": "51a2bd60c3ee64959d06acf656259437",
+    "weatherSite": "http://api.openweathermap.org/data/2.5/weather?q=",
+    "astroSite": "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/weatherdata/forecast?aggregateHours=24&combinationMethod=aggregate&includeAstronomy=true&contentType=json&unitGroup=us&locationMode=array&key=Y0K754RVDRSAN3WIHC30UY2ZW&dataElements=default&locations=955%20La%20Paz%20Road%20Santa%20Barbara",
+    "surfSite": "http://magicseaweed.com/api/",
+    "whaleSite": "http://hotline.whalemuseum.org/api.json"
+}
+
