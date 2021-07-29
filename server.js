@@ -222,7 +222,11 @@ app.get("/", function (req, res) {
 // notice how ensureAuthenticated is included, so as to keep the page exlusive to logged-in users
 
 app.get("/account", async function (req, res) {
-  res.render("account", { weatherMessage: await getWeather(), user: req.user });
+  res.render("account", { user: req.user });
+});
+
+app.get("/astronomy", async function (req, res) {
+  res.render("astronomy", { user: req.user });
 });
 
 app.get('/weather', async function (req, res) {
